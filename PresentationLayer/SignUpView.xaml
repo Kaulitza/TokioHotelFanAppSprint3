@@ -1,0 +1,62 @@
+﻿<Window x:Class="TokioHotelFanApp.PresentationLayer.SignUpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TokioHotelFanApp.PresentationLayer"
+         mc:Ignorable="d"
+              Title="Sign up/ Change Info"
+        Width="900"
+        Height="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="..\Images\TH8.jpg"
+            AlignmentY="Top" AlignmentX="Center"/>
+    </Window.Background>
+
+    <Grid Background="Black" Opacity=".7" Margin="10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="0,100,0,0">
+            <Grid>
+                <StackPanel   Orientation="Vertical"
+                HorizontalAlignment="center"
+                VerticalAlignment="top"
+                                      Width="200">
+                    <Label Foreground="DarkGoldenrod" Content="SIGN UP" FontFamily="Permanent Marker" HorizontalAlignment="Center" FontSize="25"></Label>
+                    <Label Foreground="AntiqueWhite" FontFamily="Permanent Marker">Name</Label>
+                    <TextBox Margin="0,10,0,0" Name="NameTextBox" FontSize="18" Background="White" />
+                    <Label Foreground="AntiqueWhite" FontFamily="Permanent Marker">Email</Label>
+                    <TextBox Margin="0,10,0,0" Name="EmailTextBox" FontSize="18" Background="White" />
+                    <Label Foreground="AntiqueWhite" FontFamily="Permanent Marker">Password</Label>
+                    <TextBox Margin="0,10,0,30" Name="PasswordTextBox" FontSize="18" />
+                </StackPanel>
+                <StackPanel   Orientation="Vertical"
+                HorizontalAlignment="center"
+                VerticalAlignment="top"
+                                      Width="200"
+                Margin="0,200,0,0">
+                    <Button  Name="SignupButton" Margin="0,50,0,0"
+                    Height="50" Width="200" Content="Sign up" Background="DarkGoldenrod" FontFamily="Permanent Marker" Foreground="WhiteSmoke" Click="SignupButton_Click"/>
+                    <Label Foreground="AntiqueWhite" FontFamily="Permanent Marker">Already have an account?</Label>
+                    <Label Foreground="AntiqueWhite" FontSize="10" FontFamily="Permanent Marker">Log in here</Label>
+                    <Button  x:Name="ViewLogin" Margin="0,10,0,0"
+                        Height="50" Width="200" Content="Log in" Background="DarkGoldenrod" FontFamily="Permanent Marker" Foreground="WhiteSmoke" Click="ViewLogin_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</Window>

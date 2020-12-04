@@ -1,0 +1,8 @@
+{"album":[
+    {"Album_Id":"1","Album_Name":"Schrei","Release Date":"2005-09-19","Number of Songs":"13", "Number of Hits":"4","Amount Sold":"1500000", "Record Label":"Universal Germany"},
+    {"Album_Id":"2","Album_Name":"Zimmer 483","Release Date":"2007-02-23","Number of Songs":"13", "Number of Hits":"4","Amount Sold":"1000000", "Record Company":"Universal Music"},
+    {"Album_Id":"3","Album_Name":"Scream","Release Date":"2007-06-01","Number of Songs":"12", "Number of Hits":"5","Amount Sold":"2500000", "Record Company":"Interscope, Cherrytree"},
+    {"Album_Id":"4","Album_Name":"Humanoid","Release Date":"2009-10-02","Number of Songs":"12", "Number of Hits":"2","Amount Sold":"500000", "Record Company":"Cherrytree"},
+    {"Album_Id":"5","Album_Name":"Kings Of Suburbia","Release Date":"2014-10-03","Number of Songs":"11", "Number of Hits":"3","Amount Sold":"200000", "Record Company":"De-Code"},
+    {"Album_Id":"6","Album_Name":"Dream Machine","Release Date":"2017-03-03","Number of Songs":"10", "Number of Hits":"4","Amount Sold":"100000", "Record Company":"Devilish"}
+]}

@@ -1,0 +1,6 @@
+{"bandMember":[
+	{"Bandmember_Id":"1","Bandmember_name":"Bill Kaulitz","Age":"31","Instrument":"Singer","DateOfBirth":"1989-09-01", "CountryOfBirth":"Germany", "CurrentCountry":"United States", "RelationshipStatus":"Single"},
+	{"Bandmember_Id":"2","Bandmember_name":"Tom Kaulitz","Age":"31","Instrument":"Guitar, Piano, Keyboard, Drums","DateOfBirth":"1989-09-01", "CountryOfBirth":"Germany", "CurrentCountry":"United States", "RelationshipStatus":"Married to Heidi Klum"},
+	{"Bandmember_Id":"3","Bandmember_name":"Gustav Schafer","Age":"32","Instrument":"Drums","DateOfBirth":"1989-09-09", "CountryOfBirth":"Germany", "CurrentCountry":"United States", "RelationshipStatus":"Married"},
+	{"Bandmember_Id":"4","Bandmember_name":"Georg Listing","Age":"33","Instrument":"Bass","DateOfBirth":"1989-03-31", "CountryOfBirth":"Germany", "CurrentCountry":"United States", "RelationshipStatus":"Engaged"}
+]}

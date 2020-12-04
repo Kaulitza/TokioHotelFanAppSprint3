@@ -1,0 +1,244 @@
+﻿<Window x:Class="TokioHotelFanApp.PresentationLayer.DiscographyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TokioHotelFanApp.PresentationLayer"
+        mc:Ignorable="d"
+              Title="Discography"
+        Width="900"
+        Height="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="..\Images\TH3.png"
+            AlignmentY="Top" AlignmentX="Center"/>
+    </Window.Background>
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+        <LinearGradientBrush
+        x:Key="GrayBlueGradientBrush"
+        StartPoint="0,0"
+        EndPoint="1,0"
+        Opacity="50">
+            <GradientStop Color="MidnightBlue" Offset="0"/>
+            <GradientStop Color="#CCCCFF" Offset="0.25" />
+            <GradientStop Color="#CCCCFF" Offset="0.75" />
+            <GradientStop Color="MidnightBlue" Offset="1" />
+        </LinearGradientBrush>
+        <Style x:Key="BorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="PowderBlue"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        <Style x:Key="MainPanelLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Lucida Console"/>
+        </Style>
+        <Style x:Key="MainPanelButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10,0,10,0"/>
+            <Setter Property="Width" Value="75"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Background" Value="Silver"/>
+            <Setter Property="Foreground" Value="MidnightBlue"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid
+                Width="{TemplateBinding Width}"
+                Height="{TemplateBinding Height}"
+                ClipToBounds="True">
+                            <Rectangle
+                  x:Name="innerRectangle"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  Fill="{TemplateBinding Background}"
+                  RadiusX="5"
+                  RadiusY="5" />
+                            <!-- Present Content (text) of the button. -->
+                            <DockPanel Name="myContentPresenterDockPanel">
+                                <ContentPresenter
+                    x:Name="myContentPresenter"
+                    Margin="2"
+                    HorizontalAlignment="Center"
+                    Content="{TemplateBinding  Content}"
+                    TextBlock.Foreground="Black" />
+                            </DockPanel>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="LightSteelBlue" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="MainPanelTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="MidnightBlue"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Padding" Value="3,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                Background="{TemplateBinding Background}"
+                x:Name="Bd"
+                BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid
+      Background="Black" Opacity=".7">
+        <Border
+        Margin="10"
+        Style="{StaticResource BorderStyle}">
+            <Grid
+          Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Border
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="0,0,0,10"
+            Style="{StaticResource BorderStyle}">
+                    <Label
+              Content="Character Information"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center"
+              Style="{StaticResource MainPanelLabelStyle}"
+              Foreground="Black"
+              FontSize="14"
+              FontWeight="Bold"/>
+                </Border>
+                <StackPanel
+                Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="10,50,10,10">
+                    <Label 
+                        Content="Albums"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource MainPanelLabelStyle}"/>
+                    <ListBox x:Name="AlbumsListBox" FontFamily="Permanent Marker" Margin="0,20,0,0" Height="100" Width="200" Opacity=".8" ItemsSource="{Binding Albums}" SelectedItem="{Binding SelectedAlbum}" DisplayMemberPath="AlbumName" TabIndex="6" IsTabStop="True" />
+
+                </StackPanel>
+
+                <StackPanel Margin="0,200,0,0">
+                    <Label Foreground="White" Content="Sort by" HorizontalAlignment="Left" Margin="15,0,0,0" FontFamily="Permanent Marker"></Label>
+                    <RadioButton Foreground="White" x:Name="SongSortId" IsChecked="True"  HorizontalAlignment="Left" Margin="20,10,0,0" FontFamily="Permanent Marker" Content="Song Id" Command="{Binding RadioCommandSortSongID}" CommandParameter="Songs" TabIndex="7"/>
+                    <RadioButton Foreground="White" x:Name="SongSortName" Content="Song Name"  HorizontalAlignment="Left" Margin="20,10,0,0" FontFamily="Permanent Marker" Command="{Binding RadioCommandSortSortName}" CommandParameter= "Songs" TabIndex="8"/>
+                    <Label Content="Filter by" Foreground="White" HorizontalAlignment="Left" Margin="20,30,0,0" FontFamily="Permanent Marker" RenderTransformOrigin="0.202,-2.562"/>
+                    <ComboBox Text="Filter By" Width="120" Height="30" HorizontalAlignment="Left" Margin="20,10,0,0" FontFamily="Permanent Marker" TabIndex="9" 
+                      SelectedItem="{Binding SelectedFilter}">
+                        <ComboBoxItem>Song Name</ComboBoxItem>
+                        <ComboBoxItem>Album Name</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                
+                <StackPanel Orientation="Vertical" Margin="0,400,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Foreground="White" FontFamily="Permanent Marker" Margin="20,0,0,20" Content="Album" Command="{Binding RadioCommandSearchCrit}" CommandParameter="Album" TabIndex="1"/>
+                        <RadioButton Foreground="White" FontFamily="Permanent Marker" Margin="20,0,0,20" Content="Song" Command="{Binding RadioCommandSearchCrit}" CommandParameter="Song" TabIndex="2"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="SearchTextBox" FontFamily="Permanent Marker" Text=" " Margin="20,0,0,0" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" Background="White" Width="100" Height="20" TabIndex="4" />
+                        <Button  Content="Search" Background="DarkSlateBlue" TabIndex="5"
+                        Command="{Binding ButtonSearchCommand}" 
+                        CommandParameter="{Binding ElementName=SearchTextBox}" Margin="20,0,80,0" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                    
+                </StackPanel>
+
+                <Border
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="10,0,10,10"
+            Style="{StaticResource BorderStyle}">
+                    <Grid>
+                        <StackPanel   Orientation="Vertical"
+                HorizontalAlignment="center"
+                VerticalAlignment="top"
+                                      Width="200"
+                Margin="25,0,0,0">
+                            <Label Foreground="AntiqueWhite"  Content="Name" Name="AlbumName" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="AlbumNameTextBox" Text="{Binding SelectedAlbum.AlbumName}"  Style="{StaticResource MainPanelTextBoxStyle}" />
+                            <Label Foreground="AntiqueWhite"  Content="Release Date" Name="AlbumReleaseDate" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="ReleaseDateTextBox" Text="{Binding SelectedAlbum.ReleaseDate}"  Style="{StaticResource MainPanelTextBoxStyle}" />
+                            <Label Foreground="AntiqueWhite"  Content="Record Company" Name="AlbumRecordCompany" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="RecordCompanyTextBox" Text="{Binding SelectedAlbum.RecordCompany}"  Style="{StaticResource MainPanelTextBoxStyle}" />
+                            <Label Foreground="AntiqueWhite"  Content="Number of Songs" Name="AlbumSonges" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="SinglesDateTextBox" Text="{Binding SelectedAlbum.NumberofSongs}"  Style="{StaticResource MainPanelTextBoxStyle}" />
+                            <Label Foreground="AntiqueWhite"  Content="Amount Sold" Name="AlbumAmountSold" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="AmountSoldDateTextBox" Text="{Binding SelectedAlbum.AmountSold}"  Style="{StaticResource MainPanelTextBoxStyle}" />
+                        </StackPanel>
+                        <Grid Grid.Row="2" Grid.Column="0">
+                            <Label  HorizontalAlignment="Left" Margin="30,270,0,0" Content="Songs" Foreground="White" FontFamily="Permanent Marker"/>
+                            <ListBox x:Name="SongsListBox" FontFamily="Permanent Marker" Margin="0,200,0,0" Height="100" Width="200" Opacity=".8" ItemsSource="{Binding SelectedItem.SongList, ElementName=AlbumsListBox}" SelectedItem="{Binding SelectedAlbumSongs}" DisplayMemberPath="GermanName" TabIndex="6" IsTabStop="True" />
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Border
+            Grid.Row="0"
+            Grid.Column="2"
+            Margin="0,0,0,0"
+            Style="{StaticResource BorderStyle}">
+                    <Grid>
+                        <StackPanel
+                Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="0">
+
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <Border
+            Grid.Row="1"
+            Grid.Column="3"
+            Style="{StaticResource BorderStyle}">
+                    <Grid
+              Margin="5">
+                        <StackPanel   Orientation="Vertical"
+                HorizontalAlignment="center"
+                VerticalAlignment="top"
+                                      Width="200"
+                Margin="25,150,0,0">
+                            <Label Foreground="AntiqueWhite"  Content="Name" Name="SongName" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="SongNameTextBox"  Text="{Binding SelectedItem.GermanName, ElementName=SongsListBox}"  Style="{StaticResource MainPanelTextBoxStyle}" Margin="10,0,30,0" Width="Auto" />
+                            <Label Foreground="AntiqueWhite"  Content="Album" Name="SongAlbum" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="SongAlbumTextBox" Text="{Binding SelectedAlbum.AlbumName}"  Style="{StaticResource MainPanelTextBoxStyle}" Margin="10,0,30,0" Width="Auto" />
+                            <Label Foreground="AntiqueWhite"  Content="Writers" Name="SongWrittenBy" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="WrittenByTextBox" Text="{Binding SelectedItem.Writer_name, ElementName=SongsListBox}"  Style="{StaticResource MainPanelTextBoxStyle}" Margin="10,0,30,0" Width="Auto" />
+                            <Label Foreground="AntiqueWhite"  Content="Producer" Name="SongProducer" Style="{StaticResource MainPanelLabelStyle}"></Label>
+                            <TextBox Name="ProducerTextBox" Text="{Binding SelectedItem.Composer_name, ElementName=SongsListBox}"  Style="{StaticResource MainPanelTextBoxStyle}" Margin="10,0,30,0" Width="Auto" />
+                        </StackPanel>
+
+                        <Grid Grid.Row="3">
+                            <Label  HorizontalAlignment="Left" Margin="30,350,0,0" Content="Searched Songs" Foreground="White" FontFamily="Permanent Marker"/>
+                            <ListBox x:Name="SongSearch" FontFamily="Permanent Marker" Margin="0,350,0,0" Height="100" Width="200" Opacity=".8" ItemsSource="{Binding SearchedSongs}"  DisplayMemberPath="GermanName" TabIndex="6" IsTabStop="True" />
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,171 @@
+﻿<Window x:Class="TokioHotelFanApp.PresentationLayer.UserProfileView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TokioHotelFanApp.PresentationLayer"
+        mc:Ignorable="d"
+        Title="Profile"
+        Width="900"
+        Height="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow">
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource="..\Images\TH6.jpg"
+            AlignmentY="Top" AlignmentX="Center"/>
+    </Window.Background>
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+        <LinearGradientBrush
+        x:Key="GrayBlueGradientBrush"
+        StartPoint="0,0"
+        EndPoint="1,0"
+        Opacity="50">
+            <GradientStop Color="MidnightBlue" Offset="0"/>
+            <GradientStop Color="#CCCCFF" Offset="0.25" />
+            <GradientStop Color="#CCCCFF" Offset="0.75" />
+            <GradientStop Color="MidnightBlue" Offset="1" />
+        </LinearGradientBrush>
+        <Style x:Key="BorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="PowderBlue"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        <Style x:Key="MainPanelLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Lucida Console"/>
+        </Style>
+        <Style x:Key="MainPanelButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10,0,10,0"/>
+            <Setter Property="Width" Value="75"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Background" Value="Silver"/>
+            <Setter Property="Foreground" Value="MidnightBlue"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid
+                Width="{TemplateBinding Width}"
+                Height="{TemplateBinding Height}"
+                ClipToBounds="True">
+                            <Rectangle
+                  x:Name="innerRectangle"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  Fill="{TemplateBinding Background}"
+                  RadiusX="5"
+                  RadiusY="5" />
+                            <!-- Present Content (text) of the button. -->
+                            <DockPanel Name="myContentPresenterDockPanel">
+                                <ContentPresenter
+                    x:Name="myContentPresenter"
+                    Margin="2"
+                    HorizontalAlignment="Center"
+                    Content="{TemplateBinding  Content}"
+                    TextBlock.Foreground="Black" />
+                            </DockPanel>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="LightSteelBlue" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="MainPanelTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Foreground" Value="MidnightBlue"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Padding" Value="3,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                Background="{TemplateBinding Background}"
+                x:Name="Bd"
+                BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid
+      Background="Black" Opacity=".7">
+        <Border
+        Margin="10"
+        Style="{StaticResource BorderStyle}">
+            <Grid
+          Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="10,0,10,10"
+            Style="{StaticResource BorderStyle}">
+                    <Grid>
+                        <StackPanel Margin="0,30,0,0">
+                            <TextBlock
+                                Text="MY PROFILE" Foreground="WhiteSmoke" FontFamily="Permanent Marker" FontSize="40" HorizontalAlignment="Left" Margin="20,25,0,0">
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="1"
+                        Grid.Column="0"
+                                    Margin="10,0,10,10"
+            Style="{StaticResource BorderStyle}">
+
+                    <StackPanel>
+                        <Button Height="50" Width="200" Content="Edit Information" Background="PaleVioletRed" FontFamily="Permanent Marker" Foreground="WhiteSmoke" Margin="30,130,31,0" 
+                              Command="{Binding ButtonEditInfoCommand}" Click="EditInfo_Click"/>
+                        <Button Height="50" Width="200" Content="Save Information" Background="PaleVioletRed" FontFamily="Permanent Marker" Foreground="WhiteSmoke" Margin="30,15,31,0" 
+                              Command="{Binding ButtonEditInfoCommand}" Click="SaveInformation"/>
+                        <Button Height="50"  Width="200" Content="Delete Information" Background="PaleVioletRed" FontFamily="Permanent Marker" Foreground="WhiteSmoke" Margin="30,15,31,0" 
+                              Command="{Binding ButtonEditInfoCommand}" Click="DeleteInfo"/>
+                    </StackPanel>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1"
+                                    Margin="10,0,10,10"
+            Style="{StaticResource BorderStyle}">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Label FontSize="40" HorizontalAlignment="Center" Content="Information" Foreground="WhiteSmoke" FontFamily="Permanent Marker" ></Label>
+                        <TextBlock Foreground="IndianRed" FontSize="20" FontFamily="Permanent Marker">
+                          <Underline><Bold>Name:</Bold></Underline>
+                            <TextBox Height="40" IsReadOnly="True" Name="UserNameTextBox" Text="{Binding User.UserName}" Width="200" Margin="50,10,0,0" Style="{StaticResource MainPanelTextBoxStyle}"></TextBox>
+                            <LineBreak></LineBreak>
+                                                        <LineBreak></LineBreak>
+
+                          <Underline><Bold>Password:</Bold></Underline>
+                          <TextBox Height="40" IsReadOnly="True" Name="UserPasswordTextBox" Text="{Binding User.Pasword}" Width="200" Margin="10,10,0,0" Style="{StaticResource MainPanelTextBoxStyle}"></TextBox>
+                           <LineBreak></LineBreak>
+                           <LineBreak></LineBreak>
+                           <Underline><Bold>Email:</Bold></Underline>
+                            <TextBox Height="40" IsReadOnly="True"  Name="UserEmailTextBox" Text="{Binding User.UserEmail}" Width="200" Margin="50,10,0,0" Style="{StaticResource MainPanelTextBoxStyle}"></TextBox>
+                        </TextBlock>
+                    </StackPanel>
+
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

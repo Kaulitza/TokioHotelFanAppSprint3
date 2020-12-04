@@ -1,0 +1,528 @@
+{
+	"song": [
+		{
+			"Song_Id": "Sch1",
+			"GermanName": "Schrei",
+			"Album_Id": "1",
+			"WriterName": "David Jost, Dave Roth",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch2",
+			"GermanName": "Durch den Monsun",
+			"Album_Id": "1",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch3",
+			"GermanName": "Leb die Sekunde",
+			"Album_Id": "1",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch4",
+			"GermanName": "Rette Mich",
+			"Album_Id": "1",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch5",
+			"GermanName": "Freunde Bleiben",
+			"Album_Id": "1",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch6",
+			"GermanName": "Ich bin nich'ich",
+			"Album_Id": "1",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch7",
+			"GermanName": "Wenn nichts mehr geht",
+			"Album_Id": "1",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch8",
+			"GermanName": "Laß uns hier raus",
+			"Album_Id": "1",
+			"WriterName": "Roth, Benzner, Jost, Tokio Hotel",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch9",
+			"GermanName": "Gegen meinen Willen",
+			"Album_Id": "1",
+			"WriterName": "Tokio Hotel, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch10",
+			"GermanName": "Jung und nicht mehr jugendfrei",
+			"Album_Id": "1",
+			"WriterName": "Tokio Hotel, Roth, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch11",
+			"GermanName": "Der letzte Tag",
+			"Album_Id": "1",
+			"WriterName": "Roth, Benzner, Jost, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch12",
+			"GermanName": "Unendlichkeit",
+			"Album_Id": "1",
+			"WriterName": "Tokio Hotel",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch13",
+			"GermanName": "Monsun o Koete",
+			"Album_Id": "1",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z1",
+			"GermanName": "Übers Ende der Wel",
+			"Album_Id": "2",
+			"WriterName": "David Jost, Dave Roth, Patrick Benzner, Peter Hoffmann, Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z2",
+			"GermanName": "Totgeliebt",
+			"Album_Id": "2",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz, Georg Listing, Gustav Schafer, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z3",
+			"GermanName": "Spring Nicht",
+			"Album_Id": "2",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z4",
+			"GermanName": "Heilig",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z5",
+			"GermanName": "Wo sind eure Hände",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz, Tom Kaulitz, Gustav Schafer, Georg Listing ",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z6",
+			"GermanName": "Stich ins Glück",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z7",
+			"GermanName": "Ich brech aus",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz, Tom Kaulitz, Georg Listing, Gustav Schafer",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z8",
+			"GermanName": "Reden",
+			"Album_Id": "2",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann, Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z9",
+			"GermanName": "Nach Dir Kommt Nichts",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Tom Kaulitz, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z10",
+			"GermanName": "Wir Sterben Niemals Aus",
+			"Album_Id": "2",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z11",
+			"GermanName": "Vergessene Kinder",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z12",
+			"GermanName": "An Deiner Seite",
+			"Album_Id": "2",
+			"WriterName": "Roth, Benzner, Jost, Hoffmann, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Z13",
+			"GermanName": "In Die Nacht",
+			"Album_Id": "2",
+			"WriterName": "Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S1",
+			"EnglishName": "Scream",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S2",
+			"EnglishName": "Ready, Set, Go",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S3",
+			"EnglishName": "Monsoon",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S4",
+			"EnglishName": "Love Is Dead",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S5",
+			"EnglishName": "Don't Jump",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S6",
+			"EnglishName": "On The Edge",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S7",
+			"EnglishName": "Sacred",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S8",
+			"EnglishName": "Break Away",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S9",
+			"EnglishName": "Rescue Me",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S10",
+			"EnglishName": "Final Day",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S11",
+			"EnglishName": "Forgotten Children",
+			"Album_Id": "3",
+			"WriterName": "Roth, Benzner, Jost, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "S12",
+			"EnglishName": "By Your Side",
+			"Album_Id": "3",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch2",
+			"GermanName": "Durch den Monsun",
+			"Album_Id": "1",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H1",
+			"GermanName": "Komm",
+			"EnglishName": "Noise",
+			"Album_Id": "4",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H2",
+			"GermanName": "Sonnensystem",
+			"EnglishName": "Dark Side Of The Sun",
+			"Album_Id": "4",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H3",
+			"GermanName": "Automatisch",
+			"EnglishName": "Automatic",
+			"Album_Id": "4",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H4",
+			"GermanName": "Lass Uns Laufen",
+			"EnglishName": "World Behind My Wall",
+			"Album_Id": "4",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H5",
+			"GermanName": "Humanoid",
+			"EnglishName": "Humanoid",
+			"Album_Id": "4",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H6",
+			"GermanName": "Für immer jetzt",
+			"EnglishName": "Forever Now",
+			"Album_Id": "4",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H7",
+			"GermanName": "Kampf Der Liebe",
+			"EnglishName": "Pain Of Love",
+			"Album_Id": "4",
+			"WriterName": "Roth, Benzner, Jost, Tokio Hotel",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H8",
+			"GermanName": "Hunde",
+			"EnglishName": "Dogs Unleashed",
+			"Album_Id": "4",
+			"WriterName": "Tokio Hotel, Roth, Benzner, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H9",
+			"GermanName": "Menschen Suchen Menschen",
+			"EnglishName": "Human Connect To Human",
+			"Album_Id": "4",
+			"WriterName": "Tokio Hotel, Roth, Jost",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H10",
+			"GermanName": "Alien",
+			"EnglishName": "Alien",
+			"Album_Id": "4",
+			"WriterName": "Roth, Benzner, Jost, Bill Kaulitz",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "H11",
+			"GermanName": "Geisterfahrer",
+			"EnglishName": "Phantomrider",
+			"Album_Id": "4",
+			"WriterName": "Tokio Hotel"
+		},
+		{
+			"Song_Id": "H12",
+			"GermanName": "Zoom",
+			"EnglishName": "Zoom Into Me",
+			"Album_Id": "4",
+			"Producer": "Tom Kaulitz (co),Bill Kaulitz, Desmond Child, Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "Sch1",
+			"GermanName": "Schrei",
+			"Album_Id": "1",
+			"WriterName": "David Jost, Dave Roth",
+			"Producer": "Tom Kaulitz (co),Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K1",
+			"EnglishName": "Feel It All",
+			"Album_Id": "5",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K2",
+			"EnglishName": "Stormy Weather",
+			"Album_Id": "5",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost, Hoffmann",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K3",
+			"EnglishName": "Run, Run, Run",
+			"Album_Id": "5",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K4",
+			"EnglishName": "Love Who Loves You Back",
+			"Album_Id": "5",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K5",
+			"EnglishName": "Covered In Gold",
+			"Album_Id": "5",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K6",
+			"EnglishName": "Girl Got A Gun",
+			"Album_Id": "5",
+			"WriterName": "Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K7",
+			"EnglishName": "Kings Of Suburbia",
+			"Album_Id": "5",
+			"WriterName": "Bill Kaulitz, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K8",
+			"EnglishName": "We Found Us",
+			"Album_Id": "5",
+			"WriterName": "Roth, Benzner, Jost, Tokio Hotel",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K9",
+			"EnglishName": "Invaded",
+			"Album_Id": "5",
+			"WriterName": "Tokio Hotel, Roth, Benzner, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K10",
+			"EnglishName": "Never Let You Down",
+			"Album_Id": "5",
+			"WriterName": "Tokio Hotel, Roth, Jost",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "K11",
+			"EnglishName": "Louder Than Love",
+			"Album_Id": "5",
+			"WriterName": "Roth, Benzner, Jost, Bill Kaulitz",
+			"Producer": "Peter Hoffmann, Patrick Benzner, Roth, Jost"
+		},
+		{
+			"Song_Id": "DM1",
+			"EnglishName": "Something New",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM2",
+			"EnglishName": "Boy Don't Cry",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM3",
+			"EnglishName": "Easy",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM4",
+			"EnglishName": "What If",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM5",
+			"EnglishName": "Elysa",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz, Nisse",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM6",
+			"EnglishName": "Dream Machine",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM7",
+			"EnglishName": "Cotton Candy Sky",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM8",
+			"EnglishName": "Better",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+		},
+		{
+			"Song_Id": "DM9",
+			"EnglishName": "As Young As We Are",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz, Shiro Gutzie",
+			"Producer": "Shiro Gutzie"
+		},
+		{
+			"Song_Id": "DM10",
+			"EnglishName": "Stop, Babe",
+			"Album_Id": "6",
+			"WriterName": "Bill Kaulitz, Tom Kaulitz",
+			"Producer": "Bill Kaulitz, Tom Kaulitz, Devon Culiner"
+}
+
+ ]}
+
+
+
+
